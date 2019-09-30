@@ -37,7 +37,7 @@ fun Drawable.maskColor(color: Int) {
 }
 
 fun String.formatAsUrl() =
-    if (!this.startsWith("http://") && !this.startsWith("https://")) "http://$this" else this
+    if (!this.startsWith("http://") && !this.startsWith("https://")) "https://$this" else this
 
 fun View?.applyGlobalLayoutListener(attachedExpr: (it: View?) -> Unit) {
     this?.viewTreeObserver?.addOnGlobalLayoutListener(object : ViewTreeObserver.OnGlobalLayoutListener {
